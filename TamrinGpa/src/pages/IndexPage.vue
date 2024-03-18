@@ -19,9 +19,9 @@
 
     />
       </div>
-      <div class="col-7 marging flex flex-center" v-for="student in list" :key="student">
-        <h2>{{student.name}}</h2>
-        <h2>{{student.grade}}</h2>
+      <div class="col-12 marging flex flex-center slick-track" v-for="student in list" :key="student">
+        <h4>{{student.name}}||</h4>
+        <h4>{{student.grade}}</h4>
       </div>
       <div class="col-7 marging flex flex-center">
         <q-btn @click="add()" style="background: #FF0080; color: white;width: 100%;" label="add+" />
@@ -30,7 +30,7 @@
         <q-btn @click="avg()" style="background: #FF0080; color: white;width: 100%;" label="avg" />
       </div>
       <div class="col-7 margin flex flex-center">
-        <h2>{{  }}</h2>
+        <h2>{{av}}</h2>
       </div>
     </div>
 

@@ -1,1 +1,7 @@
-// app global css in SCSS form
+.slick-track:nth-child(odd) {
+  background:#dac292;
+}
+
+.slick-track:nth-child(even) {
+  background: #e6e2d3;
+}
