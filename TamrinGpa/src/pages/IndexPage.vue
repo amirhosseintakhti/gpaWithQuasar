@@ -45,7 +45,7 @@ export default defineComponent({
   name: "IndexPage",
   setup(){
     const props = reactive({
-      total:'',
+      total:0,
       av:null,
       name:'',
       grade:null,
@@ -61,9 +61,10 @@ export default defineComponent({
     }
     function avg(){
       props.list.forEach((val)=>{
-        total+=val.grade
+        props.total+=parseFloat(val.grade)
       });
-      av = total/length;
+      props.av = props.total/props.list.length;
+      console.log(props.av)
     }
     return{
       ...toRefs(props),
